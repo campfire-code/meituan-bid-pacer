@@ -1,0 +1,13 @@
+{
+  "id": "e35",
+  "slug": "meituan-bid-pacer",
+  "name": "美团点金调价助手",
+  "version": "0.1.0",
+  "repo": "campfire-code/meituan-bid-pacer",
+  "license": "MIT",
+  "ui": {
+    "layout": "a",
+    "palette": "teal"
+  },
+  "upstream": null
+}

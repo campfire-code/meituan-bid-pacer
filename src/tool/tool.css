@@ -1,0 +1,52 @@
+/* 美团点金调价助手：只用 kit.css 的变量。类名统一以 bp- 开头。 */
+.bp-root { flex: 1; min-height: 0; display: flex; flex-wrap: wrap; gap: 14px; align-items: stretch; }
+.bp-side { flex: 1 1 320px; max-width: 380px; min-width: 280px; padding: 14px; display: flex; flex-direction: column; gap: 16px; }
+.bp-main { flex: 999 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 12px; }
+.bp-sec { display: grid; gap: 8px; align-content: start; }
+.bp-p { margin: 0; font-size: .9em; line-height: 1.6; }
+.bp-btns { display: flex; gap: 6px; flex-wrap: wrap; }
+.bp-btns .k-btn { height: 30px; padding: 0 10px; }
+.bp-row { display: flex; align-items: center; gap: 8px; font-size: .93em; }
+.bp-row > span:first-child { flex: 0 0 auto; min-width: 5.5em; }
+.bp-num { width: 96px; }
+.bp-got { display: flex; gap: 8px; flex-wrap: wrap; font-size: .9em; }
+.bp-got span { padding: 3px 10px; border-radius: 999px; border: 1px solid var(--line); color: var(--muted); }
+.bp-got span.ok { border-color: var(--ok, var(--primary)); color: var(--ok, var(--primary)); background: var(--primary-soft); }
+.bp-log { list-style: none; margin: 0; padding: 0; max-height: 140px; overflow: auto; font-size: .85em; color: var(--muted); display: grid; gap: 2px; }
+.bp-empty { margin: auto; text-align: center; line-height: 1.9; padding: 40px 0; display: grid; justify-items: center; gap: 6px; }
+.bp-ta { width: 100%; min-height: 64px; resize: vertical; height: auto; padding: 6px 10px; line-height: 1.5; }
+.bp-details summary { cursor: pointer; font-weight: 600; }
+.bp-details[open] summary { margin-bottom: 8px; }
+
+.bp-demo { padding: 6px 12px; border-radius: 8px; background: var(--primary-soft); color: var(--primary); font-size: .9em; }
+.bp-stats { display: flex; gap: 10px; flex-wrap: wrap; }
+.bp-stats > div { flex: 1 1 110px; display: grid; gap: 2px; padding: 10px 14px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-lg); }
+.bp-stats b { font-size: 1.5em; line-height: 1.1; }
+.bp-stats span { color: var(--muted); font-size: .88em; }
+.bp-card { padding: 12px 14px; display: grid; gap: 8px; align-content: start; }
+.bp-card h3 { margin: 0; font-size: 1em; }
+.bp-card-hd { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; flex-wrap: wrap; }
+
+.bp-sug { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; padding: 14px 16px; border-radius: var(--radius-lg); border: 1px solid var(--line); background: var(--surface); }
+.bp-sug.up { border-color: var(--primary); background: var(--primary-soft); }
+.bp-sug.down { border-color: #d9822b; background: rgba(217, 130, 43, .10); }
+.bp-sug.blocked { border-color: var(--err, #c0392b); background: var(--err-soft, rgba(192, 57, 43, .08)); }
+.bp-sug-main { flex: 1 1 240px; display: grid; gap: 4px; min-width: 0; }
+.bp-sug-main b { font-size: 1.15em; }
+.bp-sug-main span { color: var(--muted); font-size: .92em; line-height: 1.5; }
+.bp-auto { font-size: .88em; color: var(--muted); }
+
+.bp-bars { display: flex; align-items: flex-end; gap: 3px; height: 120px; }
+.bp-bar { flex: 1 1 0; min-width: 0; height: 100%; display: flex; align-items: flex-end; }
+.bp-bar-col { width: 100%; min-height: 2px; background: var(--primary-soft); border: 1px solid var(--line); border-bottom: 0; border-radius: 3px 3px 0 0; }
+.bp-bar.now .bp-bar-col { background: var(--primary); border-color: var(--primary); }
+.bp-axis { display: flex; justify-content: space-between; font-size: .8em; color: var(--muted); }
+.bp-tablewrap { max-height: 380px; overflow: auto; }
+tr.bp-now td { background: var(--primary-soft); font-weight: 600; }
+tr.bp-off td { color: var(--muted); }
+
+.bp-modal { position: fixed; inset: 0; background: rgba(0, 0, 0, .45); display: grid; place-items: center; z-index: 50; padding: 16px; }
+.bp-dialog { background: var(--surface); border-radius: var(--radius-lg); padding: 18px 20px; width: min(520px, 100%); display: grid; gap: 12px; box-shadow: 0 12px 40px rgba(0, 0, 0, .3); }
+.bp-dialog h3 { margin: 0; }
+.bp-dialog ul { margin: 0; padding-left: 1.2em; line-height: 1.7; font-size: .93em; }
+.bp-warn { color: var(--err, #c0392b); }

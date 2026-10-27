@@ -1,0 +1,10 @@
+{
+  "$schema": "../gen/schemas/desktop-schema.json",
+  "identifier": "meituan-remote",
+  "description": "美团商家后台窗口：只允许向应用主窗口发送事件（转交点金页面上读到的数字），不能读写文件、不能调用其它命令",
+  "windows": ["meituan"],
+  "remote": {
+    "urls": ["https://e.waimai.meituan.com/*", "https://*.meituan.com/*"]
+  },
+  "permissions": ["core:event:allow-emit"]
+}

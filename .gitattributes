@@ -1,0 +1,2 @@
+# 示例文件按 LF 检出，Windows 上的测试按字节比对
+samples/** text eol=lf
